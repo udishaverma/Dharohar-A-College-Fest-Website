@@ -57,21 +57,18 @@ nav img {
     float: right;
 }
 
-.nav_options {
-    color: white;
-}
 
-nav a {
+.nav_options {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
     margin: 0 15px;
     padding: 5px 10px;
     position: relative;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
-nav a::before {
+.nav_options::before {
     content: "";
     color: white;
     position: absolute;
@@ -83,11 +80,11 @@ nav a::before {
     transition: width 0.3s ease-in-out;
 }
 
-nav a:hover::before {
+.nav_options:hover::before {
     width: 100%;
 }
 
-nav a:hover {
+.nav_options:hover {
     color: #ffd700;
     background-color: #1e1d1d;
     border-radius: 5px;
